@@ -49,5 +49,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="txt\items.txt" />
+    <Content Include="txt\mobs.txt" />
+    <Content Include="txt\potions.txt" />
+    <Content Include="txt\rooms.txt" />
+    <Content Include="txt\treasures.txt" />
+    <Content Include="txt\weapons.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

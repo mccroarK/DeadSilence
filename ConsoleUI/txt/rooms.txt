@@ -1,0 +1,10 @@
+Rotting Apartment Hall 1 [A]
+The walls are decaying, and there is a sickening drone coming from the vents. The lights are busted, and you can only make out doors to the left and the right.
+Dim Cabin
+A poorly lit cabin. It is hard to see in here, so you should double check any compartments.
+Bloodied Cabin
+Red drag marks cover the floor of the cabin as cold air blows in from the broken window. The torn sheets and upturned furniture likely provide little to no comfort.
+Cliffside Outlook Tower
+A fairly spacious outlook tower for spotting fires. The tables are littered with observational equipment.
+Hoarder's Cabin
+The living quarters of a kleptomaniac. Many of the compartments are unable to be closed due to the amount of objects stored within them.

@@ -1,0 +1,8 @@
+Pebble
+A small rock that can be thrown pretty far.
+Glass Bottle
+Can be filled or thrown to make some noise. Covered in dirt, so you should probably not drink from it.
+Cooking Pot
+A stainless steel pot that can hold a decent amount of ingredients.
+Lighter
+A lighter in decent condition. Might need some lighter fluid to work.
