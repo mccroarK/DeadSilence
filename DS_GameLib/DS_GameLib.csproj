@@ -41,9 +41,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Combat.cs" />
-    <Compile Include="GameFunction.cs" />
+    <Compile Include="Choice.cs" />
+    <Compile Include="CombatClasses\Battle.cs" />
+    <Compile Include="CombatClasses\Combat.cs" />
+    <Compile Include="CombatClasses\Outcome.cs" />
+    <Compile Include="CombatClasses\RandomRoll.cs" />
+    <Compile Include="LoadFile.cs" />
+    <Compile Include="MenuClasses\MenuOptions\MenuItems.cs" />
+    <Compile Include="MenuClasses\MenuOptions\MenuMobs.cs" />
+    <Compile Include="MenuClasses\MenuOptions\MenuPotions.cs" />
+    <Compile Include="MenuClasses\MenuOptions\MenuRooms.cs" />
+    <Compile Include="MenuClasses\MenuOptions\MenuTreasures.cs" />
+    <Compile Include="MenuClasses\MenuOptions\MenuWeapons.cs" />
+    <Compile Include="MenuClasses\Menu.cs" />
+    <Compile Include="MenuClasses\MenuOption.cs" />
+    <Compile Include="MenuClasses\MenuSelect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

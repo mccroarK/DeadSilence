@@ -19,8 +19,22 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            // Print Menu
-            GameFunction.Menu();
+            bool gameRunning = true; // Sentry
+
+            while (gameRunning) // Game is running
+            {
+                // Start game
+                Startup.Run();
+
+                Console.WriteLine("You aren't leaving without a fight.");
+                Console.ReadLine();
+
+                // Start Combat
+                Battle.Engage(150, 150);
+
+                // End game
+                gameRunning = false;
+            }
         }
     }
 }
