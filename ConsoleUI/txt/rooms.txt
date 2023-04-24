@@ -1,10 +1,10 @@
-Rotting Apartment Hall 1 [A]
-The walls are decaying, and there is a sickening drone coming from the vents. The lights are busted, and you can only make out doors to the left and the right.
-Dim Cabin
-A poorly lit cabin. It is hard to see in here, so you should double check any compartments.
-Bloodied Cabin
-Red drag marks cover the floor of the cabin as cold air blows in from the broken window. The torn sheets and upturned furniture likely provide little to no comfort.
-Cliffside Outlook Tower
-A fairly spacious outlook tower for spotting fires. The tables are littered with observational equipment.
-Hoarder's Cabin
-The living quarters of a kleptomaniac. Many of the compartments are unable to be closed due to the amount of objects stored within them.
+Blue Mount Lodge [Lower Rest Area]
+Other than a few beds and a couple of drawers, it is a dark, empty room. There is a door to the north.
+Blue Mount Lodge [Hall]
+A thin bare hallway. The door to the lower bedrooms lies to the south, and across from it, you can see daylight through the bottom of a door to the north.
+Blue Mount Lodge [Lounge]
+You feel a cold wind as overturned furniture and broken glass litter the ground. Planks have been hastily applied to the windows, and through the gaps, you can see that it must be the middle of Winter. The trees are dead, the land is barren, and you cannot hear nor see any sign of life. Most of the other rooms are blocked off, save for a hallway to the south and a set of stairs to the north.
+Blue Mount Lodge [Upstairs]
+From the stairs to your south that lead up, there is a rug and a displaced trophy of a deer. The rug looks rolled up and battered, and trophy is missing one of its antlers. The door to the north has been knocked off its hinges. You can see nothing but darkness from beyond the frame.
+Blue Mount Lodge [Upper Rest Area]
+You can see nothing but the light from the hall to the south and an untouched window at the back of the room.

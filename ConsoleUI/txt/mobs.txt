@@ -1,10 +1,10 @@
-Zid
-The leader of the undead settlement. A spindly, decrepit corpse crouched in a chair. Despite having no eyes, it feels like he can see right through you.
-Unnamed
-A tall, hideous mass of blackened skin that Zid appears to hold in high regard. Its eyes are the only human features left.
-Abomination
-A crawling mound of flailing, angry bodies.
-Beast
-A disgusting arachnid-like monster adorned with multiple skulls.
-Worried Man
-Man looking for his friend, who has gone missing in the forest.
+Bird
+Not sure if it is a bird, but I can hear something fluttering in the attic.
+Deer Trophy
+Not really living, but could be helpful if I need something to talk to.
+Mouse
+Skittering inside the walls.
+Spider
+In the corner of the bedroom. Does not look poisonous, but I don't take chances.
+Thing at the Foot of My Bed
+In my dreams, there is a thing at the foot of my bed. I have never seen his face, but I feel like I know who he is.

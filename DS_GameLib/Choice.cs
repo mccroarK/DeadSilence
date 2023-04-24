@@ -11,7 +11,7 @@ namespace DS_GameLib
         public static string Prompt()
         {
             Console.Write("-> ");
-            string choice = Console.ReadLine();
+            string choice = Console.ReadLine().ToLower();
             return choice;
         }
     }

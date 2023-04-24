@@ -19,21 +19,24 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            bool gameRunning = true; // Sentry
+            bool exit = false; // Sentry
 
-            while (gameRunning) // Game is running
+            LoadFile.Run();
+            LoadFile.Close();
+
+            SystemMessage.Greet();
+            Console.WriteLine();
+
+            while (!exit) // Game is running
             {
                 // Start game
-                Startup.Run();
+                DisplayOption.Room();
+                exit = Command.Choose(Choice.Prompt());
 
-                Console.WriteLine("You aren't leaving without a fight.");
+                Console.WriteLine("[CONTINUE]");
                 Console.ReadLine();
 
-                // Start Combat
-                Battle.Engage(150, 150);
-
-                // End game
-                gameRunning = false;
+                Console.Clear();
             }
         }
     }

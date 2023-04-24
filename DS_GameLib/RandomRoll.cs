@@ -8,7 +8,8 @@ namespace DS_GameLib
 {
     public static class RandomDie
     {
-        public static int Roll(Random rand, string range)
+        public static Random rand = new Random();
+        public static int Roll(string range)
         {
             string[] dieRange = range.Split('D'); // Get range of die
             int number = rand.Next(1, int.Parse(dieRange[1]) + 1) * int.Parse(dieRange[0]); // Get die value

@@ -10,8 +10,6 @@ namespace DS_GameLib
     {
         public static void Fight(int player, string playerDie, int mob, string mobDie)
         {
-            Random rand = new Random();
-
             // Combat turns
             while ((player > 0) && (mob > 0))
             {
@@ -22,14 +20,14 @@ namespace DS_GameLib
 
                 if (player > 0) // If player is alive, attack mob
                 {
-                    damage = RandomDie.Roll(rand, playerDie);
+                    damage = RandomDie.Roll(playerDie);
                     mob -= damage;
                     Console.WriteLine($"Player deals {damage} damage to Mob.");
                 }
 
                 if (mob > 0) // If mob is alive, attack player
                 {
-                    damage = RandomDie.Roll(rand, mobDie);
+                    damage = RandomDie.Roll(mobDie);
                     player -= damage;
                     Console.WriteLine($"Mob deals {damage} damage to Player.");
                 }
@@ -40,7 +38,26 @@ namespace DS_GameLib
             }
 
             // After combat is done
-            Outcome.Get(player, mob);
+            Outcome(player, mob);
+        }
+
+        public static void Outcome(int playerHp, int mobHp)
+        {
+            if (playerHp > mobHp)
+            {
+                Console.WriteLine("Player wins");
+            }
+            else if (mobHp > playerHp)
+            {
+                Console.WriteLine("Mob wins");
+            }
+            else
+            {
+                Console.WriteLine("Draw");
+            }
+
+            // End input
+            Console.WriteLine("[End]");
         }
     }
 }
