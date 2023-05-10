@@ -12,7 +12,7 @@ using DS_GameLib;
 * Kevin McCroary
 * C# Game Project
 */
-
+// lmao going to have to rename because there was a 2007 movie named the same thing
 namespace ConsoleUI
 {
     class Program
@@ -21,16 +21,18 @@ namespace ConsoleUI
         {
             bool exit = false; // Sentry
 
-            LoadFile.Run();
-            LoadFile.Close();
-
+            LoadGame.RunLoad();
+            
             SystemMessage.Greet();
             Console.WriteLine();
 
-            while (!exit) // Game is running
+            World.player.MoveTo(0);
+
+            while (!exit && World.player.Alive) // Game is running
             {
                 // Start game
-                DisplayOption.Room();
+
+                Display.Room();
                 exit = Command.Choose(Choice.Prompt());
 
                 Console.WriteLine("[CONTINUE]");

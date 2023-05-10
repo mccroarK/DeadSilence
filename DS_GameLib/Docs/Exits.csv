@@ -1,0 +1,5 @@
+ID,Text (Forward|Backward),ToRoomID (Forward|Backward)
+0,There is a door to the north.|There is a door to the south leading back to the resting area.,1|0
+1,There's daylight shining through the bottom of the north door.|The door to the south leads back to the hallway.,2|1
+2,The stairs to the east lead upstairs.|The stairs to the west lead back to the lounge.,3|2
+3,The door to the north has been knocked off its hinges. There is nothing but darkness beyond the frame.|The hallway is back to the south.,4|3

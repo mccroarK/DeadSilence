@@ -8,21 +8,43 @@ namespace DS_GameLib
 {
     public static class Battle
     {
-        public static void Engage(int hpValue1, int hpValue2)
+        public static void Run(Player player, Mob mob)
         {
-            // Temp class, will probably be replaced by objects when learned
+            // When able to, replace order with list containing mobs and players
+            // Then use for loop to go through each entity in list
+            // TEMP Mob gets first move
+            Console.Clear();
+            while (player.Alive && mob.Alive)
+            {
+                Turn(mob, player);
+                Turn(player, mob);
+            }
+            if (player.Alive)
+            {
+                SystemMessage.Win();
+            }
+            else
+            {
+                SystemMessage.Lose();
+            }
+        }
 
-            // Health variables
-            int playerHp = hpValue1; // Player HP
-            int mobHp = hpValue2; // Mob HP
+        static void Turn(Mob attacker, Player victim)
+        {
+            Console.Clear();
+            // Mob's turn
+            attacker.Attack(victim);
+            Console.WriteLine("[CONTINUE]");
+            Console.ReadLine();
+        }
 
-            // Combat variables
-            string playerDie = "1D12"; // Player damage string
-            string mobDie = "1D12"; // Mob damage string
-
-            //Random rand = new Random();
-
-            Combat.Fight(playerHp, playerDie, mobHp, mobDie);
+        static void Turn(Player attacker, Mob victim)
+        {
+            Console.Clear();
+            // Player's turn
+            attacker.Attack(victim);
+            Console.WriteLine("[Continue]");
+            Console.ReadLine();
         }
     }
 }

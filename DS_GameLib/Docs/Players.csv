@@ -1,0 +1,2 @@
+ID,Name,Password,Race,Type,ArmorClass,HealthPoints,StaminaPoints,Power,StartingLocationID,WeaponID
+0,Collin,Tutorial,Human,Nobody,3,100,10,10,0,1

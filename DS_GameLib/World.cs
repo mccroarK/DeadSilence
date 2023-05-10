@@ -8,24 +8,23 @@ namespace DS_GameLib
 {
     public static class World
     {
-        public static string[] rooms = new string[5];
-        public static string[] roomdescs = new string[5];
+        // Containers
+        public static List<Room> rooms = new List<Room>();
+        public static List<Exit> exits = new List<Exit>();
 
-        public static string[] weapons = new string[4];
-        public static string[] weapondescs = new string[4];
+        // Things
+        public static List<Weapon> weapons = new List<Weapon>();
+        public static List<Potion> potions = new List<Potion>();
+        public static List<Treasure> treasures = new List<Treasure>();
+        public static List<Item> items = new List<Item>();
 
-        public static string[] potions = new string[2];
-        public static string[] potiondescs = new string[2];
+        // Actors
+        public static List<Mob> mobs = new List<Mob>();
 
-        public static string[] treasures = new string[3];
-        public static string[] treasuredescs = new string[3];
+        // Current Room
+        public static Room currentRoom;
 
-        public static List<string> items = new List<string>();
-        public static List<string> itemdescs = new List<string>();
-
-        public static List<string> mobs = new List<string>();
-        public static List<string> mobdescs = new List<string>();
-
-        public static int currentRoom = 0; // Could make current X,Y? But that would mean moving down and right
+        // Current Player
+        public static Player player; // Player character
     }
 }

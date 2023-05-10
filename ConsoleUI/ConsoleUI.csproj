@@ -50,14 +50,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="txt\items.txt" />
-    <Content Include="txt\mobs.txt" />
-    <Content Include="txt\potions.txt" />
-    <Content Include="txt\rooms.txt" />
-    <Content Include="txt\treasures.txt" />
-    <Content Include="txt\weapons.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DS_GameLib\DS_GameLib.csproj">
       <Project>{f11207ba-677d-4977-8f13-9eb9183bd47c}</Project>
       <Name>DS_GameLib</Name>

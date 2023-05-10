@@ -41,18 +41,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Choice.cs" />
     <Compile Include="CombatClasses\Battle.cs" />
-    <Compile Include="CombatClasses\Combat.cs" />
-    <Compile Include="Move.cs" />
-    <Compile Include="RandomRoll.cs" />
-    <Compile Include="GenericMessage.cs" />
-    <Compile Include="LoadFile.cs" />
-    <Compile Include="DisplayOption.cs" />
-    <Compile Include="Command.cs" />
+    <Compile Include="GameLogic\IDReader.cs" />
+    <Compile Include="Objects\Holders\Bag.cs" />
+    <Compile Include="Objects\Holders\Container.cs" />
+    <Compile Include="GameLogic\Choice.cs" />
+    <Compile Include="GameLogic\LoadGame.cs" />
+    <Compile Include="GameLogic\SystemMessage.cs" />
+    <Compile Include="Objects\Holders\Exit.cs" />
+    <Compile Include="Objects\Things\Item.cs" />
+    <Compile Include="Objects\Actors\Mob.cs" />
+    <Compile Include="Objects\Actors\Player.cs" />
+    <Compile Include="Objects\Holders\Log.cs" />
+    <Compile Include="Objects\Things\Potion.cs" />
+    <Compile Include="GameLogic\RandomRoll.cs" />
+    <Compile Include="GameLogic\Display.cs" />
+    <Compile Include="GameLogic\Command.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SystemMessage.cs" />
+    <Compile Include="Objects\Holders\Room.cs" />
+    <Compile Include="Objects\Things\Weapon.cs" />
+    <Compile Include="Objects\Things\Treasure.cs" />
     <Compile Include="World.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Docs\Exits.csv" />
+    <None Include="Docs\Items.csv" />
+    <None Include="Docs\Mobs.csv" />
+    <None Include="Docs\Players.csv" />
+    <None Include="Docs\Potions.csv" />
+    <None Include="Docs\Rooms.csv" />
+    <None Include="Docs\Treasures.csv" />
+    <None Include="Docs\Weapons.csv" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

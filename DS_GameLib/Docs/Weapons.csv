@@ -1,0 +1,7 @@
+ID,Name,Desciption,Appeal,HP,Speed,Damage,DamageType,AfflictRoll,Value,Size
+0,None,No weapon.,None,-1,5,1,None,0D0,0,0
+1,Pocket Knife,A small folding knife. Pretty durable.,Antique,6,5,3,Incision,1D14,1,1
+2,Kitchen Knife,Brittle knife that can be found in any kitchen.,None,3,5,3,Incision,1D14,1,1
+3,Butcher Knife,A large knife. Slow but looks tough and very painful.,None,7,3,8,Incision,1D6,2,1
+4,Branch,A thick tree branch. It's better than nothing.,None,10,2,5,Blunt,1D14,0,2
+5,Hammer,A slightly rusted hammer.,Practical,7,2,10,Blunt,1D6,3,1
