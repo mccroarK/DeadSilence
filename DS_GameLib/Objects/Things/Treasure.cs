@@ -63,6 +63,7 @@ namespace DS_GameLib
         public void Use()
         {
             // Inspect
+            Console.Clear();
             InfoAll();
         }
         #endregion

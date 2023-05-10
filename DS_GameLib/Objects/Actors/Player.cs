@@ -62,7 +62,6 @@ namespace DS_GameLib
 
             World.currentRoom.Add(this);
         }
-        #endregion
         #region Use Methods
         public void Use(Item item)
         {
@@ -78,8 +77,10 @@ namespace DS_GameLib
         }
         public void Use(Weapon weapon)
         {
-            // Remove None weapon from weapon
-            // Add weapon chosen
+            // TEMP Inspect Weapon
+            weapon.Use();
+            // Remove None weapon from current weapon
+            // Equip weapon chosen
             // Remove weapon from bag
         }
         public void Use(Exit exit)
@@ -100,25 +101,25 @@ namespace DS_GameLib
         public void Drop(Item item, Bag bag)
         {
             // Drop Item into room
-            bag.Items.Remove(item);
+            bag.Remove(item);
             World.currentRoom.Items.Add(item);
         }
         public void Drop(Potion potion, Bag bag)
         {
             // Drop Potion into room
-            bag.Potions.Remove(potion);
+            bag.Remove(potion);
             World.currentRoom.Potions.Add(potion);
         }
         public void Drop(Treasure treasure, Bag bag)
         {
             // Drop Treasure into room
-            bag.Treasures.Remove(treasure);
+            bag.Remove(treasure);
             World.currentRoom.Treasures.Add(treasure);
         }
         public void Drop(Weapon weapon, Bag bag)
         {
             // Drop Weapon into room
-            bag.Weapons.Remove(weapon);
+            bag.Remove(weapon);
             World.currentRoom.Weapons.Add(weapon);
         }
         #endregion
@@ -1046,6 +1047,7 @@ namespace DS_GameLib
             // Print string
             Console.WriteLine($"{this.Name} is dead.");
         }
+        #endregion
         #endregion
     }
 }

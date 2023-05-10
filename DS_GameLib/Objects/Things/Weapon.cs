@@ -73,6 +73,12 @@ namespace DS_GameLib
             Console.WriteLine($"Size: {this.Size}");
             Console.WriteLine();
         }
+        public void Use()
+        {
+            // Inspect
+            Console.Clear();
+            this.InfoAll();
+        }
         public bool AfflictCheck()
         {
             // If damage type can inflict status effect

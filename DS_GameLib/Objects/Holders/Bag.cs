@@ -22,33 +22,94 @@ namespace DS_GameLib
         #endregion
 
         #region Methods
+        #region Store Methods
         public void Store(Item item)
         {
             // Store item into bag
             Items.Add(item);
+            UpdateSlots();
         }
 
         public void Store(Potion potion)
         {
             // Store potion into bag
             Potions.Add(potion);
+            UpdateSlots();
         }
 
         public void Store(Treasure treasure)
         {
             // Store treasure into bag
             Treasures.Add(treasure);
+            UpdateSlots();
         }
 
         public void Store(Weapon weapon)
         {
             // Store weapon into bag
             Weapons.Add(weapon);
+            UpdateSlots();
+        }
+        #endregion
+        #region Remove Methods
+        public void Remove(Item item)
+        {
+            // Remove item from bag
+            Items.Remove(item);
+            UpdateSlots();
+        }
+
+        public void Remove(Potion potion)
+        {
+            // Remove potion from bag
+            Potions.Remove(potion);
+            UpdateSlots();
+        }
+
+        public void Remove(Treasure treasure)
+        {
+            // Remove treasure from bag
+            Treasures.Remove(treasure);
+            UpdateSlots();
+        }
+
+        public void Remove(Weapon weapon)
+        {
+            // Remove weapon from bag
+            Weapons.Remove(weapon);
+            UpdateSlots();
+        }
+        #endregion
+
+        public void UpdateSlots()
+        {
+            this.CurrentSlots = 0;
+            // Check item sizes
+            foreach (Item item in this.Items)
+            {
+                this.CurrentSlots += item.Size;
+            }
+            // Check potion sizes
+            foreach (Potion potion in this.Potions)
+            {
+                this.CurrentSlots += potion.Size;
+            }
+            // Check treasure sizes
+            foreach (Treasure treasure in this.Treasures)
+            {
+                this.CurrentSlots += treasure.Size;
+            }
+            // Check weapon sizes
+            foreach (Weapon weapon in this.Weapons)
+            {
+                this.CurrentSlots += weapon.Size;
+            }
         }
 
         public void Show(string userInput)
         {
             // String to make it easier to know which case is which
+            Console.Clear();
             switch (userInput)
             {
                 case "items":
